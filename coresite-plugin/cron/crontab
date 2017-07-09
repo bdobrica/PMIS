@@ -1,0 +1,10 @@
+#!/usr/bin/php
+<?php
+define ('WP_USE_THEMES', false);
+include (dirname(dirname(dirname(dirname(dirname(__FILE__))))) . '/wp-blog-header.php');
+
+#\CoreSite\Core\File::install ();
+
+$file = new \CoreSite\Core\File (2);
+$file->out ('url', 76);
+?>
